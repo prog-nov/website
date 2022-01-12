@@ -103,3 +103,6 @@ docs/sphinx/_static
 
 # Overrides file for env vars
 overrides*.yml
+
+# Teamcity reads the sip.yml and will run `sipctl pull` for us to get the latest proto files.
+servis/

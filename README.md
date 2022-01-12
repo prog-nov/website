@@ -13,6 +13,7 @@ The repository contains the needed configurations to deploy to [SIP][sip].
 ## Local Setup
 
 0. Make sure [Docker][docker] and [Docker Compose][docker-compose] are installed.
+0. Install `servisctl` from https://tools.vseth.ethz.ch/.
 1. Clone this repo: `git clone <repo-url>`
 2. Install dev requirements: `pip install -r requirements-dev.txt`
 3. Initialize the project: `./scripts/initialize_project.sh`

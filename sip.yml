@@ -24,6 +24,11 @@ sidecar:
     values:
       version: "6.0.8"
 
+servis:
+  consumes:
+    - name: vseth.sip.payment
+    - name: vseth.sip.products
+
 resources:
   requests:
     memory: 1.5G

@@ -31,3 +31,6 @@ echo "Finishing initialisation..."
 
 # Load test data
 ./scripts/loaddata.sh
+
+# Pull the proto files from the servis registry
+servisctl pull
