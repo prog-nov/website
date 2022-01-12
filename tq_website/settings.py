@@ -561,6 +561,17 @@ DATABASES = {
 
 GOOGLE_ANALYTICS_PROPERTY_ID = environ["TQ_GOOGLE_ANALYTICS_PROPERTY_ID"]
 
+# Vseth Payment API
+PAYMENT_API_HOST = environ['TQ_PAYMENT_API_HOST']
+PAYMENT_API_PORT = environ['TQ_PAYMENT_API_PORT']
+PAYMENT_API_USE_TLS = environ['TQ_PAYMENT_API_USE_TLS']
+PAYMENT_API_WEBURL = environ['TQ_PAYMENT_API_WEBURL']
+
+PRODUCTS_API_HOST = environ['TQ_PRODUCTS_API_HOST']
+PRODUCTS_API_PORT = environ['TQ_PRODUCTS_API_PORT']
+PRODUCTS_API_USE_TLS = environ['TQ_PRODUCTS_API_USE_TLS']
+PRODUCTS_API_WEBURL = environ['TQ_PRODUCTS_API_WEBURL']
+
 # Postfinance Backend
 FDS_HOST = 'fdsbc.post.ch'
 FDS_USER = environ["TQ_FDS_USER"]
@@ -568,7 +579,7 @@ FDS_PRIVATE_KEY = environ["TQ_FDS_PRIVATE_KEY"]
 FDS_DATA_PATH = 'fds_data'
 FDS_PORT = 22
 
-# Postfinance Account
+# Bank Account
 PAYMENT_ACCOUNT = {
     'default': {
         'IBAN': environ["TQ_PAYMENT_ACCOUNT_IBAN"],
@@ -593,3 +604,5 @@ if not DEBUG:
         # django.contrib.auth) you may enable sending PII data.
         send_default_pii=True
     )
+
+

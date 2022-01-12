@@ -34,3 +34,5 @@ echo "Finishing initialisation..."
 
 # Pull the proto files from the servis registry
 servisctl pull
+
+./scripts/generate_grpc_bindings.sh

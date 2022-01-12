@@ -34,6 +34,10 @@ RUN chmod +x scripts/pre-start.sh && chmod +x scripts/generate_env.py && chmod +
 RUN python3 -m pip install --upgrade pip
 RUN python3 -m pip install -r requirements.txt
 
+# Generate python code for grpc
+RUN mkdir proto || true
+RUN python3 -m grpc.tools.protoc -Iservis --python_out=proto --grpc_python_out=proto servis/vseth/sip/payment/payment.proto servis/vseth/sip/products/products.proto
+
 # Make sure log directory and files exist
 RUN mkdir -p logs && \
     touch logs/django.log && \
