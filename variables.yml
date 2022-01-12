@@ -10,9 +10,6 @@
 # Documentation on the environment variables provided by SIP can be found here:
 # https://dev.vseth.ethz.ch/reference/gatekeeper
 
-# docker-compose default overwrites (see https://docs.docker.com/compose/reference/envvars/)
-COMPOSE_FILE: [~, docker-compose.yml]
-
 
 # Host name
 TQ_NGINX_HOST: [~, localhost]
